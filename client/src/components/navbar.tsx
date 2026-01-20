@@ -45,13 +45,6 @@ export function Navbar() {
               {link.name}
             </a>
           ))}
-          <Button 
-            variant="default" 
-            className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold rounded-full px-6"
-            onClick={() => window.open("https://wa.me/5517956930180", "_blank")}
-          >
-            Fale com um Especialista
-          </Button>
         </div>
 
         {/* Mobile Toggle */}
