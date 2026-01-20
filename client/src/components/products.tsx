@@ -99,11 +99,11 @@ export function Products() {
               className={`flex w-full ${product.align === "right" ? "justify-end" : "justify-start"}`}
             >
               <div className={`w-full md:w-3/4 lg:w-2/3 p-8 rounded-3xl border-2 bg-transparent backdrop-blur-sm ${product.borderColor} ${product.shadowColor} transition-all duration-300 flex flex-col md:flex-row gap-8 items-center md:items-start relative group`}>
-                <div className="h-32 w-32 shrink-0 flex items-center justify-center bg-white/5 rounded-2xl overflow-hidden p-2">
+                <div className={`h-32 w-32 shrink-0 flex items-center justify-center rounded-2xl overflow-hidden p-2 transition-colors duration-300 ${product.id === 'hazapi' ? 'bg-white/20' : 'bg-white/5'}`}>
                   <img 
                     src={product.image} 
                     alt={product.name}
-                    className={`h-full w-full object-contain transform group-hover:scale-110 transition-transform duration-500 ${product.id === 'hazapi' ? 'brightness-125 contrast-125 filter drop-shadow-[0_0_8px_rgba(34,197,94,0.4)] scale-125' : ''}`}
+                    className={`h-full w-full object-contain transform group-hover:scale-110 transition-transform duration-500 ${product.id === 'hazapi' ? 'brightness-125 contrast-125 filter drop-shadow-[0_0_12px_rgba(255,255,255,0.4)] scale-125' : ''}`}
                   />
                 </div>
 
