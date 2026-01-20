@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Smartphone, Monitor, Bot, Database } from "lucide-react";
+import { Smartphone, Monitor, Bot, Database, Layout } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
 // WhatsApp Icon SVG Component
@@ -29,6 +29,11 @@ const services = [
     icon: WhatsAppIcon,
     title: "IA no WhatsApp",
     description: "Atendimento inteligente e automatizado via WhatsApp, funcionando 24h por dia para não perder nenhum lead.",
+  },
+  {
+    icon: Layout,
+    title: "Landing Pages",
+    description: "Criação de páginas de alta conversão, com design moderno e otimizadas para transformar visitantes em clientes.",
   },
   {
     icon: Bot,
