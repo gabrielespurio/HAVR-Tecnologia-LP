@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Check } from "lucide-react";
-import eduflowImg from "@assets/generated_images/eduflow_3d_glass_icon.png";
+import eduflowRobot from "@assets/WhatsApp_Image_2026-01-20_at_13.09.22_1768925433687.jpeg";
 import odontoImg from "@assets/generated_images/odontosync_3d_glass_icon.png";
 import hazapiLogo from "@assets/Hazapi_1768925158930.png";
 
@@ -10,7 +10,7 @@ const products = [
     id: "eduflow",
     name: "Eduflow",
     description: "Sistema completo de gestão escolar com automação de cobrança e IA para retenção de alunos.",
-    image: eduflowImg,
+    image: eduflowRobot,
     features: ["Matrícula Digital", "Previsão de Evasão", "App dos Pais"],
     color: "bg-blue-500/10 border-blue-500/20"
   },
@@ -56,11 +56,11 @@ export function Products() {
               transition={{ delay: index * 0.1 }}
               className={`flex flex-col p-8 rounded-3xl border ${product.color} backdrop-blur-sm hover:-translate-y-2 transition-all duration-300`}
             >
-              <div className="h-16 mb-8 flex items-center">
+              <div className="h-20 mb-8 flex items-center justify-center overflow-hidden rounded-xl">
                 <img 
                   src={product.image} 
                   alt={product.name}
-                  className={`h-full w-auto object-contain ${product.id === 'hazapi' ? 'max-h-12' : 'max-h-16 filter brightness-110'}`}
+                  className={`h-full w-auto object-contain ${product.id === 'hazapi' ? 'max-h-12' : 'max-h-20'}`}
                 />
               </div>
 
@@ -70,7 +70,7 @@ export function Products() {
               </p>
 
               <ul className="space-y-3 mb-8">
-                {product.features.map((feature, i) => (
+                {products[index].features.map((feature, i) => (
                   <li key={i} className="flex items-center text-xs text-white/70">
                     <Check className="w-3.5 h-3.5 text-primary mr-2" />
                     {feature}
