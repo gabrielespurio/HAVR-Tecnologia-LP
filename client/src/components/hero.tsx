@@ -1,28 +1,34 @@
-import { useState, useEffect } from "react";
-import { motion, useSpring, useTransform, animate } from "framer-motion";
+import { useState, useEffect, useRef } from "react";
+import { motion, animate, useInView } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import heroBg from "@assets/generated_images/abstract_high-tech_ai_network_background.png";
 
-function Counter({ value, duration = 0.5 }: { value: string; duration?: number }) {
+function Counter({ value, duration = 2 }: { value: string; duration?: number }) {
   const [displayValue, setDisplayValue] = useState(0);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+  
   const numericValue = parseInt(value.replace(/\D/g, ""));
-  const suffix = value.replace(/\d/g, "");
+  const prefix = value.startsWith("+") ? "+" : "";
+  const suffix = value.replace(/[+\d]/g, "");
 
   useEffect(() => {
-    const controls = animate(0, numericValue, {
-      duration: duration,
-      onUpdate: (latest) => setDisplayValue(Math.floor(latest)),
-      ease: "easeOut",
-    });
-    return () => controls.stop();
-  }, [numericValue, duration]);
+    if (isInView) {
+      const controls = animate(0, numericValue, {
+        duration: duration,
+        onUpdate: (latest) => setDisplayValue(Math.floor(latest)),
+        ease: "easeOut",
+      });
+      return () => controls.stop();
+    }
+  }, [numericValue, duration, isInView]);
 
   return (
-    <span>
-      {suffix.startsWith("+") ? "+" : ""}
+    <span ref={ref}>
+      {prefix}
       {displayValue}
-      {!suffix.startsWith("+") ? suffix : ""}
+      {suffix}
     </span>
   );
 }
@@ -85,7 +91,7 @@ export function Hero() {
           {[
             { label: "Projetos Entregues", value: "+50" },
             { label: "Satisfação", value: "99%" },
-            { label: "Anos de Mercado", value: "5+" },
+            { label: "Anos de Mercado", value: "+5" },
             { label: "Suporte", value: "24/7" },
           ].map((stat, i) => (
             <div key={i} className="text-center">
