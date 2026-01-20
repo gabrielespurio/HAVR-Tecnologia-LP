@@ -12,7 +12,8 @@ const products = [
     description: "Sistema completo de gestão escolar com automação de cobrança e IA para retenção de alunos.",
     image: eduflowRobot,
     features: ["Matrícula Digital", "Previsão de Evasão", "App dos Pais"],
-    color: "bg-blue-500/10 border-blue-500/20",
+    borderColor: "border-blue-500",
+    shadowColor: "shadow-[0_0_20px_rgba(59,130,246,0.5)]",
     align: "left"
   },
   {
@@ -21,7 +22,8 @@ const products = [
     description: "Software para clínicas odontológicas com agenda inteligente e confirmação automática.",
     image: odontoImg,
     features: ["Prontuário Digital", "Financeiro Integrado", "Lembretes via WhatsApp"],
-    color: "bg-teal-500/10 border-teal-500/20",
+    borderColor: "border-teal-500",
+    shadowColor: "shadow-[0_0_20px_rgba(20,184,166,0.5)]",
     align: "right"
   },
   {
@@ -30,14 +32,15 @@ const products = [
     description: "CRM focado em WhatsApp para centralizar atendimentos e multiplicar a produtividade da sua equipe.",
     image: hazapiLogo,
     features: ["Múltiplos Atendentes", "Chatbot Integrado", "Relatórios de Performance"],
-    color: "bg-green-500/10 border-green-500/20",
+    borderColor: "border-green-500",
+    shadowColor: "shadow-[0_0_20px_rgba(34,197,94,0.5)]",
     align: "left"
   }
 ];
 
 export function Products() {
   return (
-    <section id="products" className="py-24 bg-secondary/10 relative overflow-hidden">
+    <section id="products" className="py-24 bg-background relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-24">
           <span className="text-primary text-sm font-bold tracking-widest uppercase mb-2 block">Nossos Produtos</span>
@@ -68,7 +71,7 @@ export function Products() {
               }}
               className={`flex w-full ${product.align === "right" ? "justify-end" : "justify-start"}`}
             >
-              <div className={`w-full md:w-3/4 lg:w-2/3 p-8 rounded-3xl border ${product.color} backdrop-blur-sm hover:border-primary/30 transition-all duration-300 flex flex-col md:flex-row gap-8 items-center md:items-start`}>
+              <div className={`w-full md:w-3/4 lg:w-2/3 p-8 rounded-3xl border-2 bg-transparent backdrop-blur-sm ${product.borderColor} ${product.shadowColor} transition-all duration-300 flex flex-col md:flex-row gap-8 items-center md:items-start`}>
                 <div className="h-32 w-32 shrink-0 flex items-center justify-center bg-white/5 rounded-2xl overflow-hidden p-4">
                   <img 
                     src={product.image} 
