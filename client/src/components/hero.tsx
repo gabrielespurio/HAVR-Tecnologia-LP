@@ -89,14 +89,14 @@ export function Hero() {
           className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-white/5 pt-8"
         >
           {[
-            { label: "Projetos Entregues", value: "+50" },
-            { label: "Satisfação", value: "99%" },
-            { label: "Anos de Mercado", value: "+5" },
-            { label: "Suporte", value: "24/7" },
+            { label: "Projetos Entregues", value: "+50", animate: true },
+            { label: "Satisfação", value: "99%", animate: true },
+            { label: "Anos de Mercado", value: "+5", animate: true },
+            { label: "Suporte", value: "24/7", animate: false },
           ].map((stat, i) => (
             <div key={i} className="text-center">
               <h4 className="text-3xl font-heading font-bold text-white mb-1">
-                <Counter value={stat.value} />
+                {stat.animate ? <Counter value={stat.value} /> : stat.value}
               </h4>
               <p className="text-sm text-muted-foreground uppercase tracking-wider">{stat.label}</p>
             </div>
