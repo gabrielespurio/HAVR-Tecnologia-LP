@@ -1,9 +1,5 @@
 import { motion } from "framer-motion";
 import { Linkedin } from "lucide-react";
-import ceoImg from "@assets/generated_images/abstract_high-tech_ai_network_background.png"; // Placeholder for specific CEO image if needed, but I'll use the attached ones via path
-import ctoImg from "@assets/generated_images/abstract_high-tech_ai_network_background.png"; // Same here
-
-// Note: Replit aliases attached assets. I will use the provided filenames.
 import ceoPhoto from "@assets/Gemini_Generated_Image_hc3zrnhc3zrnhc3z_1768924433107.png";
 import ctoPhoto from "@assets/Foto_Gabriel_1768924549974.png";
 
@@ -31,38 +27,48 @@ export function Team() {
             Liderança <span className="text-primary">Visionária</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            Conheça as mentes por trás da HAVR Tecnologia, focadas em transformar o futuro dos negócios.
+            Conheça as mentes por trás da HAVR Tecnologia.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
           {team.map((member, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.2 }}
-              className="group relative"
+              className="flex flex-col items-center text-center"
             >
-              <div className="relative overflow-hidden rounded-2xl aspect-[4/5] bg-secondary/20 border border-white/5 group-hover:border-primary/50 transition-all duration-500">
-                <img
-                  src={member.image}
-                  alt={member.role}
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-80" />
-                
-                <div className="absolute bottom-0 left-0 right-0 p-8 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
-                  <h3 className="text-2xl font-heading font-bold text-white mb-1">{member.name}</h3>
-                  <p className="text-primary font-medium text-sm mb-4 uppercase tracking-widest">{member.role}</p>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    {member.description}
-                  </p>
-                  <a href="#" className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/10 text-white hover:bg-primary hover:text-primary-foreground transition-all">
-                    <Linkedin className="w-5 h-5" />
-                  </a>
+              {/* Photo Container - Smaller and consistent background */}
+              <div className="relative mb-6 group w-full max-w-[320px]">
+                <div className="relative overflow-hidden rounded-2xl aspect-square bg-[#1E293B] border border-white/10 group-hover:border-primary/50 transition-all duration-500 shadow-2xl">
+                  {/* Subtle gradient overlay to mimic the CTO photo background depth */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent pointer-events-none" />
+                  
+                  <img
+                    src={member.image}
+                    alt={member.role}
+                    className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
+                  />
+                  
+                  {/* Overlay for social link */}
+                  <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                    <a href="#" className="w-12 h-12 rounded-full bg-white text-primary flex items-center justify-center shadow-xl transform scale-90 group-hover:scale-100 transition-transform">
+                      <Linkedin className="w-6 h-6" />
+                    </a>
+                  </div>
                 </div>
+              </div>
+
+              {/* Info - Now below the photo */}
+              <div className="max-w-xs">
+                <h3 className="text-2xl font-heading font-bold text-white mb-1">{member.name}</h3>
+                <p className="text-primary font-medium text-sm mb-3 uppercase tracking-widest">{member.role}</p>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  {member.description}
+                </p>
               </div>
             </motion.div>
           ))}
