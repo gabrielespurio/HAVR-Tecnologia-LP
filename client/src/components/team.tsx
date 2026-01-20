@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
-import { Linkedin } from "lucide-react";
-import ceoPhoto from "@assets/Gemini_Generated_Image_hc3zrnhc3zrnhc3z_1768924433107.png";
-import ctoPhoto from "@assets/Foto_Gabriel_1768924549974.png";
+import ceoPhoto from "@assets/Gemini_Generated_Image_mbyhk6mbyhk6mbyh_1768924876853.png";
+import ctoPhoto from "@assets/Foto_Gabriel_Perfil_1768924888967.png";
 
 const team = [
   {
@@ -41,28 +40,21 @@ export function Team() {
               transition={{ delay: index * 0.2 }}
               className="flex flex-col items-center text-center"
             >
-              {/* Photo Container - Smaller and consistent background */}
-              <div className="relative mb-6 group w-full max-w-[320px]">
-                <div className="relative overflow-hidden rounded-2xl aspect-square bg-[#1E293B] border border-white/10 group-hover:border-primary/50 transition-all duration-500 shadow-2xl">
-                  {/* Subtle gradient overlay to mimic the CTO photo background depth */}
+              {/* Photo Container - Static, no hover effects */}
+              <div className="relative mb-6 w-full max-w-[320px]">
+                <div className="relative overflow-hidden rounded-2xl aspect-square bg-[#1E293B] border border-white/10 shadow-2xl">
+                  {/* Subtle depth gradient for both */}
                   <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent pointer-events-none" />
                   
                   <img
                     src={member.image}
                     alt={member.role}
-                    className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
+                    className="w-full h-full object-cover"
                   />
-                  
-                  {/* Overlay for social link */}
-                  <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
-                    <a href="#" className="w-12 h-12 rounded-full bg-white text-primary flex items-center justify-center shadow-xl transform scale-90 group-hover:scale-100 transition-transform">
-                      <Linkedin className="w-6 h-6" />
-                    </a>
-                  </div>
                 </div>
               </div>
 
-              {/* Info - Now below the photo */}
+              {/* Info */}
               <div className="max-w-xs">
                 <h3 className="text-2xl font-heading font-bold text-white mb-1">{member.name}</h3>
                 <p className="text-primary font-medium text-sm mb-3 uppercase tracking-widest">{member.role}</p>
