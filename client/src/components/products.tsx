@@ -43,14 +43,14 @@ const products = [
   },
   {
     id: "app-mobile",
-    name: "App Mobile – Gestão para Franqueadora",
+    name: "Sistema de Gestão para Franqueadora",
     description: "Sistema completo de gestão para rede de franquias do segmento de beleza, integrando agendamentos, financeiro e gestão de equipes.",
     image: appMobileImg,
     features: ["Controle Financeiro", "Gestão de Equipes", "Relatórios em Tempo Real"],
     borderColor: "border-purple-500",
     shadowColor: "shadow-[0_0_20px_rgba(168,85,247,0.5)]",
     align: "right",
-    tag: "Mobile Development"
+    tag: "Software House"
   },
   {
     id: "web-app",
