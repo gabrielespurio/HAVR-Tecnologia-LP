@@ -23,7 +23,7 @@ export function Team() {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-5xl font-heading font-bold text-white mb-4">
-            Liderança <span className="text-primary">Visionária</span>
+            Conheça os Líderes da <span className="text-primary">HAVR Tecnologia</span>
           </h2>
           <p className="text-muted-foreground text-lg">
             Conheça as mentes por trás da HAVR Tecnologia.
