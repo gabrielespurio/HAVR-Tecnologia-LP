@@ -21,13 +21,10 @@ export function Team() {
   return (
     <section id="team" className="py-24 bg-background relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-4xl mx-auto mb-16">
           <h2 className="text-3xl md:text-5xl font-heading font-bold text-white mb-4">
             Conheça os Líderes da <span className="text-primary">HAVR Tecnologia</span>
           </h2>
-          <p className="text-muted-foreground text-lg">
-            Conheça as mentes por trás da HAVR Tecnologia.
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
