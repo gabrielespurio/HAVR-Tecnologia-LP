@@ -50,7 +50,7 @@ const products = [
     borderColor: "border-purple-500",
     shadowColor: "shadow-[0_0_20px_rgba(168,85,247,0.5)]",
     align: "right",
-    tag: "Software House"
+    tag: "MOBILE APP"
   },
   {
     id: "web-app",
@@ -61,7 +61,7 @@ const products = [
     borderColor: "border-pink-500",
     shadowColor: "shadow-[0_0_20px_rgba(236,72,153,0.5)]",
     align: "left",
-    tag: "Web App"
+    tag: "WEB APP"
   }
 ];
 
