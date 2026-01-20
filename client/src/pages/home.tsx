@@ -2,6 +2,7 @@ import { Navbar } from "@/components/navbar";
 import { Hero } from "@/components/hero";
 import { Services } from "@/components/services";
 import { Products } from "@/components/products";
+import { Team } from "@/components/team";
 import { Contact } from "@/components/contact";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <Services />
       <Products />
+      <Team />
       <Contact />
     </div>
   );
