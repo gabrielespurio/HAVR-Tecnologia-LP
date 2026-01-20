@@ -1,7 +1,31 @@
-import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import { motion, useSpring, useTransform, animate } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Code, Cpu, ShieldCheck } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import heroBg from "@assets/generated_images/abstract_high-tech_ai_network_background.png";
+
+function Counter({ value, duration = 0.5 }: { value: string; duration?: number }) {
+  const [displayValue, setDisplayValue] = useState(0);
+  const numericValue = parseInt(value.replace(/\D/g, ""));
+  const suffix = value.replace(/\d/g, "");
+
+  useEffect(() => {
+    const controls = animate(0, numericValue, {
+      duration: duration,
+      onUpdate: (latest) => setDisplayValue(Math.floor(latest)),
+      ease: "easeOut",
+    });
+    return () => controls.stop();
+  }, [numericValue, duration]);
+
+  return (
+    <span>
+      {suffix.startsWith("+") ? "+" : ""}
+      {displayValue}
+      {!suffix.startsWith("+") ? suffix : ""}
+    </span>
+  );
+}
 
 export function Hero() {
   return (
@@ -65,7 +89,9 @@ export function Hero() {
             { label: "Suporte", value: "24/7" },
           ].map((stat, i) => (
             <div key={i} className="text-center">
-              <h4 className="text-3xl font-heading font-bold text-white mb-1">{stat.value}</h4>
+              <h4 className="text-3xl font-heading font-bold text-white mb-1">
+                <Counter value={stat.value} />
+              </h4>
               <p className="text-sm text-muted-foreground uppercase tracking-wider">{stat.label}</p>
             </div>
           ))}
