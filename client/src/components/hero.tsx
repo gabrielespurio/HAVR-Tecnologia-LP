@@ -82,9 +82,21 @@ export function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button size="lg" variant="outline" className="border-white/10 text-white hover:bg-white/5 rounded-full px-8 h-12 text-base group">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="border-white/10 text-white hover:bg-white/5 rounded-full px-8 h-12 text-base group"
+              onClick={() => document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Conheça Nossos Produtos
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </Button>
+            <Button 
+              size="lg" 
+              className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 h-12 text-base font-semibold"
+              onClick={() => window.open("https://wa.me/5517956930180", "_blank")}
+            >
+              Fale com um Especialista
             </Button>
           </div>
         </motion.div>

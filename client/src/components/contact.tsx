@@ -18,9 +18,9 @@ export function Contact() {
                 <Mail className="w-5 h-5 mr-4 text-primary" />
                 contato@havrtecnologia.com
               </a>
-              <a href="https://wa.me/5517992331492" className="flex items-center text-white/80 hover:text-primary transition-colors">
+              <a href="https://wa.me/5517956930180" className="flex items-center text-white/80 hover:text-primary transition-colors">
                 <Phone className="w-5 h-5 mr-4 text-primary" />
-                +55 17 99233-1492
+                +55 17 95693-0180
               </a>
               <div className="flex items-center gap-4 mt-8">
                 <Button size="icon" variant="outline" className="rounded-full border-white/10 hover:bg-white/5 hover:text-primary text-white">
@@ -56,7 +56,13 @@ export function Contact() {
                 <label className="text-sm font-medium text-white">Mensagem</label>
                 <textarea className="w-full bg-background/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary/50 transition-colors min-h-[120px]" placeholder="Como podemos ajudar?" />
               </div>
-              <Button className="w-full bg-primary text-primary-foreground font-bold h-12 rounded-lg hover:bg-primary/90">
+              <Button 
+                className="w-full bg-primary text-primary-foreground font-bold h-12 rounded-lg hover:bg-primary/90"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open("https://wa.me/5517956930180", "_blank");
+                }}
+              >
                 Enviar Mensagem
               </Button>
             </form>

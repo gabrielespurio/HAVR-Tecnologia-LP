@@ -129,7 +129,11 @@ export function Products() {
                     ))}
                   </ul>
 
-                  <Button variant="ghost" className="text-white hover:text-primary hover:bg-white/5 font-semibold group border border-white/5 px-4 h-9 text-xs">
+                  <Button 
+                    variant="ghost" 
+                    className="text-white hover:text-primary hover:bg-white/5 font-semibold group border border-white/5 px-4 h-9 text-xs"
+                    onClick={() => window.open("https://wa.me/5517956930180", "_blank")}
+                  >
                     Saiba mais <ArrowRight className="w-3 h-3 ml-2 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </div>
