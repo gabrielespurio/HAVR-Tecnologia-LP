@@ -103,7 +103,7 @@ export function Products() {
                   <img 
                     src={product.image} 
                     alt={product.name}
-                    className="h-full w-full object-contain transform group-hover:scale-110 transition-transform duration-500"
+                    className={`h-full w-full object-contain transform group-hover:scale-110 transition-transform duration-500 ${product.id === 'hazapi' ? 'brightness-125 contrast-125 filter drop-shadow-[0_0_8px_rgba(34,197,94,0.4)] scale-125' : ''}`}
                   />
                 </div>
 
