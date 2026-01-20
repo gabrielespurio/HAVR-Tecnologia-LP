@@ -17,7 +17,7 @@ const products = [
     borderColor: "border-blue-500",
     shadowColor: "shadow-[0_0_20px_rgba(59,130,246,0.5)]",
     align: "left",
-    tag: "SaaS"
+    tags: ["SaaS"]
   },
   {
     id: "odontosync",
@@ -28,7 +28,7 @@ const products = [
     borderColor: "border-teal-500",
     shadowColor: "shadow-[0_0_20px_rgba(20,184,166,0.5)]",
     align: "right",
-    tag: "SaaS"
+    tags: ["SaaS"]
   },
   {
     id: "hazapi",
@@ -39,7 +39,7 @@ const products = [
     borderColor: "border-green-500",
     shadowColor: "shadow-[0_0_20px_rgba(34,197,94,0.5)]",
     align: "left",
-    tag: "CRM"
+    tags: ["CRM"]
   },
   {
     id: "app-mobile",
@@ -50,7 +50,7 @@ const products = [
     borderColor: "border-purple-500",
     shadowColor: "shadow-[0_0_20px_rgba(168,85,247,0.5)]",
     align: "right",
-    tag: "MOBILE APP"
+    tags: ["MOBILE APP", "WEB APP"]
   },
   {
     id: "web-app",
@@ -61,7 +61,7 @@ const products = [
     borderColor: "border-pink-500",
     shadowColor: "shadow-[0_0_20px_rgba(236,72,153,0.5)]",
     align: "left",
-    tag: "WEB APP"
+    tags: ["WEB APP"]
   }
 ];
 
@@ -108,10 +108,12 @@ export function Products() {
                 </div>
 
                 <div className="flex-grow">
-                  <div className="flex items-center gap-3 mb-2">
-                    <span className="text-[10px] uppercase tracking-widest px-2 py-0.5 rounded-full bg-white/5 border border-white/10 text-white/50">
-                      {product.tag}
-                    </span>
+                  <div className="flex items-center gap-3 mb-2 flex-wrap">
+                    {product.tags.map((tag, i) => (
+                      <span key={i} className="text-[10px] uppercase tracking-widest px-2 py-0.5 rounded-full bg-white/5 border border-white/10 text-white/50">
+                        {tag}
+                      </span>
+                    ))}
                   </div>
                   <h3 className="text-xl font-heading font-bold text-white mb-2 leading-tight">{product.name}</h3>
                   <p className="text-muted-foreground mb-6 text-sm leading-relaxed">
