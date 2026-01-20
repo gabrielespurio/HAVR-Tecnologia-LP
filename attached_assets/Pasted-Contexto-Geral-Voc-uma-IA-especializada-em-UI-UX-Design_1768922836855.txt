@@ -1,0 +1,128 @@
+Contexto Geral
+Você é uma IA especializada em UI/UX Design moderno, desenvolvimento front-end de alto padrão e branding digital.
+Seu objetivo é criar uma landing page institucional extremamente bonita, elegante, moderna e profissional, que transmita autoridade, inovação, confiança e foco em tecnologia e inteligência artificial.
+
+📌 Objetivo da Página
+
+Criar uma landing page de apresentação da HAVR Tecnologia, focada em:
+
+Impressão visual premium
+
+Experiência do usuário fluida e intuitiva
+
+Design moderno (clean, elegante, tecnológico)
+
+Conversão (gerar contatos e leads)
+
+Clareza dos serviços e produtos
+
+🧠 Identidade da Empresa (Base de Conteúdo)
+🏢 Visão Geral
+
+Nome: HAVR Tecnologia
+
+Missão: Transformar negócios através de soluções tecnológicas inovadoras, sistemas inteligentes, escaláveis e personalizados.
+
+Tempo de mercado: Mais de 5 anos de experiência
+
+Diferenciais:
+
+Foco 100% no cliente
+
+Inovação constante com tecnologias avançadas
+
+Suporte 24/7 com IA integrada
+
+Resultados:
+
++50 projetos entregues
+
+99% de satisfação dos clientes
+
+🛠️ Serviços Oferecidos
+
+Criar uma seção clara, visual e moderna para os serviços abaixo:
+
+Sistemas Personalizados
+Desenvolvimento de software sob medida para automatização de processos e soluções específicas para cada negócio.
+
+Aplicativos Mobile
+Criação de aplicativos exclusivos para Android e iOS, com foco em performance e experiência do usuário.
+
+IA no WhatsApp
+Atendimento inteligente, automatizado e eficiente via WhatsApp, funcionando 24h por dia.
+
+Agentes Inteligentes & Assistentes Virtuais
+Criação de assistentes virtuais com IA capazes de automatizar atendimentos, processos e decisões, integrados ao WhatsApp, sites e sistemas internos, operando 24/7 com alta eficiência e personalização.
+
+CRM com Integração WhatsApp
+Plataforma para centralização de conversas, gestão de clientes e automação de atendimento.
+
+🚀 Produtos Próprios (Portfólio)
+
+Criar uma seção visualmente destacada (cards ou grid moderno):
+
+Eduflow
+Sistema completo de gestão escolar: matrícula, leads, previsão de evasão, automação de cobrança e comunicação integrada.
+
+OdontoSync
+Software de gestão para clínicas odontológicas: agenda inteligente, pacientes, financeiro, cobranças automáticas e suporte por IA.
+
+HAZAP
+CRM focado em WhatsApp: centralização de atendimentos, filas, métricas de performance (TMA) e respostas automáticas.
+
+📞 Contato
+
+Criar uma seção de contato clara e convidativa:
+
+E-mail: contato@havrtecnologia.com
+
+Telefone / WhatsApp: +55 17 99233-1492
+
+Redes sociais: LinkedIn, Instagram e Facebook
+
+Adicionar CTA forte, como:
+
+“Fale com um especialista”
+
+“Solicite um orçamento”
+
+“Transforme seu negócio com tecnologia”
+
+🎨 Requisitos de Design (MUITO IMPORTANTE)
+
+Design clean, sofisticado e tecnológico
+
+Estilo moderno (inspirado em startups, SaaS e empresas de IA)
+
+Tipografia elegante e legível
+
+Uso inteligente de espaçamento (white space)
+
+Animações suaves (hover, scroll, microinterações)
+
+Layout responsivo (mobile-first)
+
+Paleta de cores moderna (tons escuros ou neutros com destaque tecnológico)
+
+Ícones modernos e consistentes
+
+UX focada em clareza, escaneabilidade e conversão
+
+🧩 Requisitos Técnicos
+
+Código organizado e escalável
+
+Componentes bem estruturados
+
+SEO básico aplicado (headings, meta tags, semântica)
+
+Performance otimizada
+
+Pronto para produção
+
+🧠 Expectativa Final
+
+O resultado deve parecer o site de uma software house premium, transmitindo:
+
+inovação • confiança • tecnologia • inteligência artificial • profissionalismo
