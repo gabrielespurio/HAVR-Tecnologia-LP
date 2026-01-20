@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Check } from "lucide-react";
 import eduflowRobot from "@assets/WhatsApp_Image_2026-01-20_at_13.09.22_1768925433687.jpeg";
-import odontoImg from "@assets/generated_images/odontosync_3d_glass_icon.png";
+import odontoImg from "@assets/ChatGPT_Image_20_de_jan._de_2026,_17_36_10_1768941378100.png";
 import hazapiLogo from "@assets/Hazapi_1768925158930.png";
 import appMobileImg from "@assets/generated_images/mobile_app_business_management_dashboard_mockup.png";
 import webAppImg from "@assets/generated_images/web_app_kids_recreation_management_mockup.png";
