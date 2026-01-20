@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Smartphone, Monitor, Bot, Database, Layout } from "lucide-react";
+import { Smartphone, Monitor, Bot, Database, Layout, Code2, Cpu, Globe, Rocket, Terminal } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
 // WhatsApp Icon SVG Component
@@ -16,12 +16,12 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
 
 const services = [
   {
-    icon: Monitor,
+    icon: Code2,
     title: "Sistemas Personalizados",
     description: "Software sob medida para automatização de processos complexos e soluções específicas para o seu modelo de negócio.",
   },
   {
-    icon: Smartphone,
+    icon: Rocket,
     title: "Aplicativos Mobile",
     description: "Apps nativos e híbridos para Android e iOS com foco total em performance, usabilidade e experiência do usuário.",
   },
@@ -31,17 +31,17 @@ const services = [
     description: "Atendimento inteligente e automatizado via WhatsApp, funcionando 24h por dia para não perder nenhum lead.",
   },
   {
-    icon: Layout,
+    icon: Globe,
     title: "Landing Pages",
     description: "Criação de páginas de alta conversão, com design moderno e otimizadas para transformar visitantes em clientes.",
   },
   {
-    icon: Bot,
+    icon: Terminal,
     title: "Agentes Inteligentes",
     description: "Assistentes virtuais capazes de automatizar atendimentos e processos, integrados aos seus sistemas internos.",
   },
   {
-    icon: Database,
+    icon: Cpu,
     title: "CRM Integrado",
     description: "Plataforma centralizada para gestão de clientes, métricas de vendas e automação de relacionamento.",
   },
